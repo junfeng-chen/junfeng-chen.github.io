@@ -1,0 +1,34 @@
+# jemdoc: menu{MENU}{joining.html}{}
+# jemdoc: title{Joining}
+# jemdoc: addcss{../jemdoc.css}
+
+== Joining Opportunities
+=== Graduate Students (Thesis-Based MSc and PhD)
+I am accepting applications for PhD positions. Interested candidates should first apply to the EECS at uOttawa.  
+Please email me with *all relevant supporting documents*, including a brief description of your background and research interests.\n
+
+Candidates must meet the minimum admission requirements, such as GPA and language proficiency. 
+Ideal candidates will have a strong foundation in mathematics (e.g., probability, optimization) and programming (e.g., experience with Python, PyTorch). \n
+
+In certain cases, I may accept thesis-based Master’s students, but this is uncommon and requires outstanding programming skills. \n 
+
+For highly qualified undergraduate students, there is an option for Direct PhD entry from the BSc. \n
+
+=== Undergraduate Students (Project-Based)
+Ideal candidates should have a background in mathematics (e.g., linear algebra, probability, calculus), AI fundamentals, and experience with numerical computing (e.g., Python). 
+A commitment of at least two terms, with 15 hours per week, is usually required.
+
+=== Graduate Students (Project-Based)
+If you have a solid machine learning background and are interested in publishing in top-tier venues or advancing knowledge in the machine learning field,
+please email me with all relevant supporting documents.
+
+=== Internships & Visiting Scholars
+I currently do not have funding for external exchange students or academic visitors. 
+However, I’m open to discussions if you wish to collaborate on a funding application or have your own funding. If our research interests align, we can explore possibilities.
+
+=== ECE or CS Program
+At uOttawa, I can supervise students from both the ECE and CS programs. I have a slight preference for CS due to my research
+will use data structures, algorithms, and computing theory, which overlaps less with traditional ECE research. However, if you have relevant expertise in ECE, feel free to contact me.
+
+=== EDI statement  
+I strongly encourage applications from all backgrounds and will make every effort to review applications fairly and respond promptly.

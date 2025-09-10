@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="icon" href="./images/icon.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../jemdoc.css" type="text/css" />
+<!--- <title>Joining</title> --->
+<title> Homepage </title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<div id="header-icon-container" >
+<a href="index.html"><img src="photos/profile2.png" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+</div>
+<div id="header-text-container">
+<a href="index.html"> Homepage </a>
+</div>
+</div>
+<div id="main">
+<button class="openbtn" onclick="openNav()">☰</button>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<div class="menu-category">Main</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="blog.html">Experience</a></div>
+<div class="menu-item"><a href="note.html">Videos/Notes</a></div>
+<div class="menu-category">Reliable AI</div>
+<div class="menu-item"><a href="inv_fair.html">Fairness&nbsp;via&nbsp;sufficiency</a></div>
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
+<h2>Joining Opportunities</h2>
+<h3>Graduate Students (Thesis-Based MSc and PhD)</h3>
+<p>I am accepting applications for PhD positions. Interested candidates should first apply to the EECS at uOttawa.  
+Please email me with <b>all relevant supporting documents</b>, including a brief description of your background and research interests.<br /></p>
+<p>Candidates must meet the minimum admission requirements, such as GPA and language proficiency. 
+Ideal candidates will have a strong foundation in mathematics (e.g., probability, optimization) and programming (e.g., experience with Python, PyTorch). <br /></p>
+<p>In certain cases, I may accept thesis-based Master’s students, but this is uncommon and requires outstanding programming skills. <br /> </p>
+<p>For highly qualified undergraduate students, there is an option for Direct PhD entry from the BSc. <br /></p>
+<h3>Undergraduate Students (Project-Based)</h3>
+<p>Ideal candidates should have a background in mathematics (e.g., linear algebra, probability, calculus), AI fundamentals, and experience with numerical computing (e.g., Python). 
+A commitment of at least two terms, with 15 hours per week, is usually required.</p>
+<h3>Graduate Students (Project-Based)</h3>
+<p>If you have a solid machine learning background and are interested in publishing in top-tier venues or advancing knowledge in the machine learning field,
+please email me with all relevant supporting documents.</p>
+<h3>Internships &amp; Visiting Scholars</h3>
+<p>I currently do not have funding for external exchange students or academic visitors. 
+However, I’m open to discussions if you wish to collaborate on a funding application or have your own funding. If our research interests align, we can explore possibilities.</p>
+<h3>ECE or CS Program</h3>
+<p>At uOttawa, I can supervise students from both the ECE and CS programs. I have a slight preference for CS due to my research
+will use data structures, algorithms, and computing theory, which overlaps less with traditional ECE research. However, if you have relevant expertise in ECE, feel free to contact me.</p>
+<h3>EDI statement  </h3>
+<p>I strongly encourage applications from all backgrounds and will make every effort to review applications fairly and respond promptly.</p>
+</div> <!-- <div id="layout-content"> -->
+<div id="footer-container">
+<div id="footer">
+<div id="footer-text">
+Last edited  on December 31<sup>st 2024. </br>
+Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>.
+</div> <!-- <div id="footer-text"> -->
+</div> <!-- <div id="footer"> -->
+</div> <!-- <div id="footer-container"> -->
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
+</body>
+</html>

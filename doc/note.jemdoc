@@ -1,0 +1,11 @@
+# jemdoc: menu{MENU}{note.html}{}
+# jemdoc: title{Notes}
+# jemdoc: addcss{../jemdoc.css}
+
+
+== Videos & Notes
+Below are some videos and notes I made in machine learning foundations and advanced topics.
+
+- [https://www.youtube.com/watch?v=v_NUYEWNx7A  Brief introdution to VAE] \n
+- [https://drive.google.com/file/d/1JHlZXwgPIKMmnW7wRG4X1fP49Ak3f1Ws/view  Algorithmic Fairness Through Group Calibration: Theories And Applications In Medical Image Analysis]\n
+

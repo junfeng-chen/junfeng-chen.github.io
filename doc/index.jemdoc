@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{index.html}
+# jemdoc: title{Junfeng Chen's Homepage}
+==Junfeng Chen
+
+~~~
+{}{img_left}{./photos/image2.jpg}{alt text}{200px}{200px}{}
+Ph.D. \n
+[https://www.minesparis.psl.eu/ Mines Paris - Université PSL], [https://www.cemef.minesparis.psl.eu/en/homepage/ CEMEF], [https://www.cemef.minesparis.psl.eu/en/presentation/team-cfl/ CFL] \n
+*E-mail*: majfchen AT just DOT hk \n
+\[[https://scholar.google.com/citations?user=HK-MQ-cAAAAJ&hl=en&authuser=1 Google Scholar]\] \[[https://github.com/junfeng-chen GitHub]\] 
+~~~
+
+== About me
+I am an Assistant Professor at the Hong Kong University of Science and Technology (HKUST). \n
+Previously, I was a the postdoctoral researcher at Southern University of Science and Technology, hosted by [https://sites.google.com/site/klwuhomepage/ Prof. Kailliang Wu] at the Department of Mathematics. \n
+I received my Bachelor degrees in Aerospace Engineering and Mathematics from Tsinghua University in 2016, followed by a Diplôme d'Ingénieur and a PhD from Mines Paris – Université PSL. My PhD supervisors are [https://fr.linkedin.com/in/ehachem/ Prof. Elie Hachem] and [https://jviquerat.github.io/ Jonathan Viquerat].
+
+{{<b>}} Research Interests {{</b>}} \n 
+Reliable, efficient, and robust deep-learning methods for computational science and engineering; data-driven flow modeling; multiscale and chaotic dynamics; dimension reduction and reduced-order modeling.\n
+
+{{<b>}} Teaching {{</b>}} \n
+MATH 2411 Applied Statistics.
+
+
+# == Recent news \[[/news.html archive]\]
+# - \[May 2024\] Our paper "Intersectional Unfairness Discovery" is accepted at ICML 2024.
+
+
+~~~
+{}{raw}
+<a href='https://clustrmaps.com/site/1bimb'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=80&t=n&d=k0itc4evzGO_bCad8HN2IzLlbAoNrBUhhvYjXCSvM1Y'/></a>
+~~~

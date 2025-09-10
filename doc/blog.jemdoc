@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{blog.html}{}
+# jemdoc: title{Blog}
+# jemdoc: addcss{../jemdoc.css}
+
+
+== Research Activies
+- Area Chair: AISTATS 2023, 2024, 2025
+- Action Editor: TMLR 2023
+- Conference Reviewer:  AAAI (Top 25% Reviewer 21'), AISTATS, ACML, ICLR, ICML, NeurIPS, CVPR, ICCV, FAccT
+- Journal Reviewer: Machine Learning Journal, IEEE Trans on Image Processing, IEEE Trans on Pattern Analysis and Machine Intelligence, Transactions on Machine Learning Research
+
+== Awards
+
+- Outstanding Reviewer (Top 10%), ICLR 2021
+- Best Reviewer (Top 10%), ICML 2021
+- Outstanding Reviewer (Top 8%), NeurIPS 2021
+- Highlighted Reviewer (Top 10%), ICLR 2022
+- Top Reviewer (Top 10%), NeurIPS 2022
+- Expert Reviewer, TMLR 2023
+
+
+== Blogs
+
+- [inv_fair.html Invariance and Learning Fair Representation] \n
+- [https://www.growkudos.com/publications/10.1145%25252F3563947/reader  Fast sequential decision-making via prior knowledge] \n
+
+
+== Thesis
+
+- Principled Deep Learning Approaches for Learning from Limited Labeled Data through Distribution Matching. \n
+*Ph.D Thesis*
+\[[https://corpus.ulaval.ca/handle/20.500.11794/73028 Link]\]

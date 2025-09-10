@@ -1,0 +1,40 @@
+import torch
+import  numpy as np
+
+# defining task number
+T_task = 5
+coefficient = np.random.dirichlet(np.ones(T_task), size=1)
+
+
+def jacobian_reg(data_batch,dir_coefficient,feature,clf, reg_feature=False):
+    """
+    :param data_batch: data_batch contains T tasks
+    :param dir_coefficient: the dirichlet coefficient
+    :param feature: feature representation function (network w.r.t. the embedding)
+    :param clf: the classifier defined on the embedding space.
+    :param reg_feature: regularization on the feature network or the whole network (feature+clf)
+    :return: jacobian regularization value
+    """
+    # defining generated samples
+    X_mix = 0
+
+    # generating samples though linear mixture w.r.t. dirichlet mixture
+    for index, task in enumerate(data_batch):
+
+        # input and output
+        X, y = task
+        X.requires_grad = False
+        X_mix  = X_mix + dir_coefficient[index] * X
+
+
+    # computing the graident w.r.t. feature:
+    if reg_feature == True:
+        Z = feature(X_mix)
+        J_value = torch.autograd.grad(torch.norm(torch.sum(Z)),X_mix)
+    else:
+        Y = clf(feature(X_mix))
+        J_value = torch.autograd.grad(torch.sum(Y), X_mix)
+
+    return torch.norm(J_value)
+
+

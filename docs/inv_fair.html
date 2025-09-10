@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="icon" href="./images/icon.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../jemdoc.css" type="text/css" />
+<!--- <title>Invariance_Fair</title> --->
+<title> Homepage </title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<div id="header-icon-container" >
+<a href="index.html"><img src="photos/profile2.png" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+</div>
+<div id="header-text-container">
+<a href="index.html"> Homepage </a>
+</div>
+</div>
+<div id="main">
+<button class="openbtn" onclick="openNav()">☰</button>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<div class="menu-category">Main</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="blog.html">Experience</a></div>
+<div class="menu-item"><a href="note.html">Videos/Notes</a></div>
+<div class="menu-category">Reliable AI</div>
+<div class="menu-item"><a href="inv_fair.html" class="current">Fairness&nbsp;via&nbsp;sufficiency</a></div>
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
+<h2>Invariance and Learning Fair Representation</h2>
+<h3>Learning fair representation</h3>
+<p>Machine learning algorithms often treated sub-population unfavorably, e.g., predicting the likelihood of crime on the grounds of ethnicity, gender or age.
+The algorithmic fairness is then proposed to mitigate the prediction bias for the <i>protected feature</i> such as gender and age.</p>
+<p>Specifically, we are interested in learning a fair representation which can easily transfer the unbiased prior knowledge to the downstream tasks.
+E.g, in language understanding, the fair embedding provides both useful and unbiased representation for different objectives such as translation
+or recommendation.</p>
+<div id="text-img-container"><div id="img-container">
+<img src="./image_inv_fair/fair_rep.png" alt="taxonomy_fair" width="750px" height="300px" /></div>
+<div id="text-container"></div></div>
+<h3>Invariance and Fair Representation</h3>
+<p>Intuitively, if we could learn invariant prediction behaviors on different subgroups of population, we could achieve certain kinds of fairness. As the invariance suggests some identical statistical
+properties for different subgroups such that the prediction discrimination could be alleviated.</p>
+<p>Formally, we denote the input as \(X\), ground truth output as \(Y\), sensitive attribute as \(A\) (such as age) and the representation function \(\lambda: X \to Z\) that maps the input into a latent variable \(Z\).
+Then based on different fair definitions, we have three popular definitions:</p>
+<ul>
+<li><p><font color=orange>Independence Rule (or Demographic Parity) \(A \perp \!\!\! \perp Z\). </font> It learns a representation \(\lambda(X)\) such that the embedding variable is independent to
+the sensitive attribute \(A\). E.g, consider predict the health risk of patients, it ensures that the latent space have the identical distribution under different subgroups \(P(Z|A=a)=P(Z|A=a&rsquo;)\).</p>
+</li>
+<li><p><font color=orange> Separation Rule   \(A \perp \!\!\! \perp Z | Y\). </font> It enforces a stronger constraint by encouraging the <i>conditional</i> independence w.r.t. the label \(Y\).
+E.g,  health risk system ensures that the latent space have the identical distribution under different subgroups for the high risk group \(P(Z|A=a,Y=\text{high})=P(Z|A=a&rsquo;,Y=\text{high})\).</p>
+</li>
+<li><p><font color=orange> Sufficiency Rule  \(A \perp \!\!\! \perp Y | Z\). </font> It ensures the same expected conditional output.
+E.g, if two patients from two subgroups have the same latent observation \(Z=s\), their expected <i>true</i> output should be identical: \(P(Y|Z=z,A=a)=P(Y|Z=z,A=a&rsquo;)\).</p>
+</li>
+</ul>
+<p><i>Why sufficiency?</i> The fundamental limitations of Independence and Separation lie in the inherent trade-off of <i>fair</i> and <i>informative</i> predictions: encouraging the fairness could induce the degradation of the
+prediction performance (even we have the data generation distribution!). Thus we will focus on the learning fair representation w.r.t. sufficiency rule,
+which could possibly achieve these objectives simultaneously.</p>
+<h3>Learning fair representation w.r.t. sufficiency rule</h3>
+<p>In <a href="https://arxiv.org/abs/2205.13316" target=&ldquo;blank&rdquo;>our paper</a>, we consider a fair representation learning approach to achieve the sufficiency rule. The intuition is depicted as: if the optimal predictors
+\(h^{\star}: Z \to Y\) are invariant for each subgroup \(A=a\). The corresponding representation \(\lambda(X)\) is fair w.r.t the sufficiency.</p>
+<p>In plain language, suppose we have two subgroups \(A=\{0,1\}\) and a fix representation \(Z=\lambda(X)\), then we train two predictors \(h\) for each subgroup w.r.t some prediction loss, if the optimal predictor
+are invariant \(h^{\star}_{0} = h^{\star}_{1}\), then \(\lambda\) satisfy the sufficiency rule (see Fig(a)).</p>
+<div id="text-img-container"><div id="img-container">
+<img src="./image_inv_fair/motivation.png" alt="taxonomy_fair" width="900px" height="300px" /></div>
+<div id="text-container"></div></div>
+<p>The aforementioned intuition can be naturally formulated as a <b>bi-level optimization</b>, where we need to adjust the representation \(\lambda\) (in the outer-loop)
+to satisfy the invariant optimal predictor \(h\) (in the inner-loop).</p>
+<p>In deep learning, if we further adopt the gradient-based approach in solving this bi-level objective, a straightforward solution is to learn the representation \(\lambda\) to fulfill the identical <i>explicit</i> gradient-descent directions in learning optimal predictor \(h^{\star}\) of different groups,
+shown in Fig.(b). Clearly, if the inner gradient descent step of each sub-group is well-aligned, their final predictors (as the approximation of \(h^{\star}\)) will be surely invariant.
+However, the corresponding algorithmic realization is challenge in the deep learning regim:</p>
+<ol>
+<li><p>It requires storing the whole gradient steps, which induces a high memory burden;</p>
+</li>
+<li><p>the embedding function \(\lambda\) is optimized via backpropagation from the whole gradient optimization path, which induces a high computational complexity.</p>
+</li>
+</ol>
+<p>Thus in this paper, we propose an implicit path alignment, shown in Fig.(c).
+Namely, we only consider the final (\(t\)-th) update of the predictor \(h^{(t)}\), then we update representation function \(\lambda\) by approximating its gradient at point \(h^{(t)}\)
+through the implicit function. By using the gradient approximation, we do not need to store the whole gradient steps and conduct the backpropagation through the entire optimization path.</p>
+<p>It is worth mentioning that the idea shares several similarities with the recent proposed IRM (Invariant Risk Minimization), where the objective is also to achieve sufficient representation:
+\(P(Y|Z,A=a) = P(Y|Z,A=a&rsquo;)\). (Though the practical approximation IRM_V1 or its variant seems not capturing the true invariance, due to the optimization difficulties.)</p>
+<h3>Formulation and gradient approximation</h3>
+<p>Assume \(\mathcal{L}\) is the prediction loss, the intuition could be formulated as:</p>
+<p style="text-align:center">
+\[
+    \min_{\lambda}&nbsp;\mathcal{L}_0(h_0^{\star},\lambda) +  \mathcal{L}_1(h_1^{\star},\lambda) \\
+    \text{s.t.}&nbsp;&nbsp; h_{0}^{\star} = h_{1}^{\star}, h_{0}^{\star} \in \underset{h}{\text{argmin}}  &nbsp;\mathcal{L}_0(h,\lambda), &nbsp; h_{1}^{\star} \in \underset{h}{\text{argmin}}  &nbsp;\mathcal{L}_1(h,\lambda).
+\]
+</p><p>If we adopt the Lagrangian approximation with fair constraint \(\kappa&gt;0\), we have:</p>
+<p style="text-align:center">
+\[
+ \min_{\lambda}&nbsp;\mathcal{L}_0(h_0^{\star},\lambda) +  \mathcal{L}_1(h_1^{\star},\lambda)  + \kappa \|h_{0}^{\star} - h_{1}^{\star} \|^2 \\
+  \text{s.t.}&nbsp;&nbsp;h_{0}^{\star} \in \underset{h}{\text{argmin}}  &nbsp;\mathcal{L}_0(h,\lambda), &nbsp; h_{1}^{\star} \in \underset{h}{\text{argmin}}  &nbsp;\mathcal{L}_1(h,\lambda)
+\]
+</p><p>Thus the key is to estimate the gradient of \(\lambda\) in the <tt>auto-diff</tt>. Based on the chain rule, we need to estimate \(\nabla_{\lambda} h_0^{\star}\) (the response function).
+Note \(h_{0}^{\star} \in \underset{h}{\text{argmin}} &nbsp;\mathcal{L}_0(h,\lambda)\), then we have:</p>
+<p style="text-align:center">
+\[
+\nabla_{h_0} \mathcal{L}_0(h_{0}^{\star},\lambda) = 0
+\]
+</p><p>Then taking the total derivative w.r.t. \(\lambda\), we have:</p>
+<p style="text-align:center">
+\[
+\nabla_{\lambda} h_0^{\star} = -\left(\nabla^2_{h_0} \mathcal{L}_0(h_0^{*}, \lambda) \right)^{-1} \left(\nabla_{\lambda}\nabla_{h_0}\mathcal{L}_0(h_0^{*}, \lambda) \right)
+\]
+</p><p>Then plugging in \(h_0^{\star} \approx h_0^{(T)}\), the last step of the gradient update, we could efficiently approximate the response function (along with other computational tricks).</p>
+<h3>Empirical validations</h3>
+<p>We further show empirical benefits of proposed approach in two classification tasks (a) Toxic (b) CelebA, which demonstrated a consistent better accuracy-fair trade-off. We further demonstrate the
+computational benefits of proposed implicit gradient approximation (c), which remains stable under high inner-loop steps.</p>
+<div id="text-img-container"><div id="img-container">
+<img src="./image_inv_fair/result.png" alt="results" width="850px" height="300px" /></div>
+<div id="text-container"></div></div>
+<h3>Summary</h3>
+<p>We consider a fair representation learning perspective to ensure the sufficiency rule. We naturally formulate the problem as a bi-level optimization and adopt
+implicit approximation to efficiently estimate the gradient.</p>
+<p><br />
+CC BY-SA 4.0 <br />
+C.Shui, Jun, 2022</p>
+</div> <!-- <div id="layout-content"> -->
+<div id="footer-container">
+<div id="footer">
+<div id="footer-text">
+Last edited  on December 9<sup>th</sup> 2023. </br>
+Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>.
+</div> <!-- <div id="footer-text"> -->
+</div> <!-- <div id="footer"> -->
+</div> <!-- <div id="footer-container"> -->
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
+</body>
+</html>

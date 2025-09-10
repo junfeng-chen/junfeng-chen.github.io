@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{joining.html}{}
+# jemdoc: title{ethics}
+# jemdoc: addcss{../jemdoc.css}
+
+== CSI5195/ELG5295 Ethics of Artificial Intelligence
+
+=== Introduction 
+AI has become an indispensable tool for automating processes, accelerating scientific discovery, and enhancing data-driven decision-making. However, the automation and scaling of these tasks can lead to significant societal challenges. 
+This course is designed to provide a technical foundation for complying with AI ethics, systematically exploring key areas such as fairness, robustness, privacy, interpretability, and AI safety. \n 
+
+
+This is a seminar course. This field is very rapidly advancing and is an opening research direction. Therefore there are no formal textbooks. Students will read and discuss papers from the lecture slides. 
+
+=== Prerequisites
+Students should have (1) broad exposure to machine learning, data science, deep learning, or related courses such as computer vision, natural language processing, 
+(2)familiarity with popular machine learning programming languages such as python, pytorch, scikit-learn, or tensorflow.
+
