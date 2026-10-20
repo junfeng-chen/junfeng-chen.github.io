@@ -6,27 +6,27 @@
 {}{img_left}{./photos/image1.jpg}{alt text}{200px}{200px}{}
 Ph.D. \n
 [https://www.minesparis.psl.eu/ Mines Paris - Université PSL], [https://www.cemef.minesparis.psl.eu/en/homepage/ CEMEF], [https://www.cemef.minesparis.psl.eu/en/presentation/team-cfl/ CFL] \n
-*E-mail*: majfchen AT just DOT hk \n
-\[[https://scholar.google.com/citations?user=HK-MQ-cAAAAJ&hl=en&authuser=1 Google Scholar]\] \[[https://github.com/junfeng-chen GitHub]\] 
+*E-mail*: majfchen AT ust DOT hk \n
+\[[https://scholar.google.com/citations?user=HK-MQ-cAAAAJ&hl=en&authuser=1 Google Scholar]\] \[[https://github.com/junfeng-chen GitHub]\]
 ~~~
 
 == About me
-I am an Assistant Professor at the Hong Kong University of Science and Technology (HKUST). \n
-Previously, I was a postdoctoral researcher at Southern University of Science and Technology, hosted by [https://sites.google.com/site/klwuhomepage/ Prof. Kailliang Wu] at the Department of Mathematics. \n
-I received my Bachelor degrees in Aerospace Engineering and Mathematics from Tsinghua University in 2016, followed by a Diplôme d'Ingénieur and a PhD from Mines Paris – Université PSL. My PhD supervisors are [https://fr.linkedin.com/in/ehachem/ Prof. Elie Hachem] and [https://jviquerat.github.io/ Jonathan Viquerat].
+I am an Assistant Professor at the Hong Kong University of Science and Technology (HKUST).
+Previously, I was a postdoctoral researcher at Southern University of Science and Technology (SUSTech), hosted by [https://kailiang-wu.github.io/ Prof. Kailiang Wu] at the Department of Mathematics.
+I received my Bachelor degrees in Aerospace Engineering and Mathematics from Tsinghua University in 2016, followed by a Diplôme d'Ingénieur and a PhD degree from Mines Paris – Université PSL. My PhD supervisors are Prof. Elie Hachem and [https://jviquerat.github.io/ Dr. Jonathan Viquerat].
 
-{{<b>}} Research Interests {{</b>}} \n 
-Reliable, efficient, and robust deep-learning methods for computational science and engineering; data-driven flow modeling; multiscale and chaotic dynamics; closure modeling.\n
+{{<b>}} Research Interests {{</b>}} \n
+Interscale structure in multiscale chaos\n
+Deterministic and stochastic closure modeling for multiscale systems\n
+Data-driven modeling of unknown governing equations\n
+Surrogate modeling for computationally expensive partial differential equations\n
 
 {{<b>}} Teaching {{</b>}} \n
-At HKUST \n
-2025 Fall, Instructor, MATH2411 Applied Statistics. \n
-At SUSTech \n
-2023 Fall, TA, Probability and Statistical Inference. \n
-2022 Summer, Instructor, Introduction to Linux, Python, and Machine Learning \n
-
-
-~~~
-{}{raw}
-<a href='https://clustrmaps.com/site/1bimb'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=80&t=n&d=k0itc4evzGO_bCad8HN2IzLlbAoNrBUhhvYjXCSvM1Y'/></a>
-~~~
+_At HKUST_\n
+2026 Fall, Instructor, DASC 3230 Statistical Modeling and Machine Learning\n
+2026 Spring, Instructor, MATH 2411 Applied Statistics\n
+2025 Fall, Instructor, MATH 2411 Applied Statistics\n
+\n
+_At SUSTech_\n
+2023 Fall, TA, Probability and Statistical Inference\n
+2022 Summer, Instructor, Introduction to Linux, Python, and Machine Learning

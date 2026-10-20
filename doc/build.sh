@@ -1,12 +1,7 @@
-mainCFG="mysite.conf"
-otherCFG="mysite.conf"
+#!/bin/sh
+set -eu
 
+# Resolve source files relative to this script, regardless of the caller's directory.
+cd "$(dirname "$0")"
 
-python3 jemdoc -c ${mainCFG}  -o ../docs/   index.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   publications.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   news.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   joining.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   ethic.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   blog.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   inv_fair.jemdoc
-#python jemdoc -c ${otherCFG} -o ../docs/   note.jemdoc
+python3 jemdoc -c mysite.conf -o ../docs/ index.jemdoc publications.jemdoc

@@ -1,0 +1,72 @@
+# jemdoc: menu{MENU}{publications.html}
+# jemdoc: title{Research}
+
+== Working Papers
+
+- Spectrally constrained discovery resolves the stability-expressivity paradox in learning stiff multiscale physics. \n
+  Qinghe Wang, *Junfeng Chen*, Kailiang Wu. \n
+  /work in progress/ 2026. \n
+- Continuous tokenizer for scientific AI: Unifying discrete data and continuous physical dynamics. \n
+  *Junfeng Chen*, Qinghe Wang, Kailiang Wu. \n
+  /work in progress/ 2026. \n
+- CoPiT: A conditional Position-induced Transformer for aerodynamic field prediction on unstructured meshes. \n
+  *Junfeng Chen*, Yongchen Fan, Zhonghua Qiao, Kailiang Wu. \n
+  /work in progress/ 2026. \n
+- Flux-form spatiotemporal neural operators for coarse-grained dynamics of multiscale PDEs. \n
+  *Junfeng Chen*. \n
+  /submitted/ 2026. \n
+  \[[https://arxiv.org/abs/2608.18148 Paper]\]
+- Intrinsic instantaneous coarse-to-fine recoverability in multiscale chaos: The Lorenz-96 system. \n
+  Zhongfeng Xu, *Junfeng Chen*. \n
+  /under revision/ 2026. \n
+  \[[https://arxiv.org/abs/2607.08323 Paper]\]
+
+~~~
+{}{raw}
+<br />
+~~~
+
+== Peer Reviewed
+
+- Diagnosing the conditional-mean barrier in scientific machine-learning surrogates. \n
+  *Junfeng Chen*. \n
+  /Journal of Machine Learning for Modeling and Computing/ 2026. \n
+  \[[https://arxiv.org/abs/2605.28076v3 Paper]\]
+  \[[https://github.com/junfeng-chen/conditional_mean_barrier Code]\]
+- DUE: A deep learning framework and library for modeling unknown equations. \n
+  *Junfeng Chen*, Kailiang Wu, Dongbin Xiu. \n
+  /SIAM Review/ 2025. \n
+  \[[https://arxiv.org/abs/2504.10373 Paper]\]
+  \[[https://github.com/AI4Equations/due Code]\]
+- Positional knowledge is all you need: Position-induced Transformer (PiT) for operator learning. \n
+  *Junfeng Chen*, Kailiang Wu. \n
+  /International Conference on Machine Learning (ICML)/ 2024. \n
+  \[[https://www.arxiv.org/abs/2405.09285 Paper]\]
+  \[[https://icml.cc/virtual/2024/poster/33916 Poster]\]
+  \[[https://github.com/junfeng-chen/position_induced_transformer Code]\]
+- Deep-OSG: Deep learning of operators in semigroup. \n
+  *Junfeng Chen*, Kailiang Wu. \n
+  /Journal of Computational Physics/ 2023. \n
+  \[[https://arxiv.org/abs/2302.03358 Paper]\]
+- A twin-decoder structure for incompressible laminar flow reconstruction with uncertainty estimation around 2D obstacles. \n
+  *Junfeng Chen*, Jonathan Viquerat, Frédéric Heymes, Elie Hachem. \n
+  /Neural Computing and Applications/ 2022. \n
+  \[[https://arxiv.org/abs/2104.03619 Paper]\]
+  \[[https://github.com/cfl-minds/twin_autoencoder Code]\]
+- Graph neural networks for laminar flow prediction around random two-dimensional shapes. \n
+  *Junfeng Chen*, Elie Hachem, Jonathan Viquerat. \n
+  /Physics of Fluids/ 2021. \n
+  \[[https://arxiv.org/abs/2107.11529 Paper]\]
+  \[[https://github.com/cfl-minds/gnn_laminar_flow Code]\]
+
+~~~
+{}{raw}
+<br />
+~~~
+
+== Others
+
+- U-net architectures for fast prediction of incompressible laminar flows. \n
+  *Junfeng Chen*, Jonathan Viquerat, Elie Hachem. \n
+  /arxiv/ 2019 \n
+  \[[https://arxiv.org/abs/1910.13532 paper]\] \n
